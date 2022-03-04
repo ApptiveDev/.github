@@ -14,7 +14,7 @@
  코드리뷰, 컨벤션 등 동아리 가이드라인을 설명합니다. 천천히 읽어주세요 :smiley:  
  이슈, PR 템플릿은 모든 리포지토리에 자동으로 적용됩니다.
  
- * CONTRIBUTING.md: 코딩 컨벤션, 브랜치 관리 전략 등 동아리 컨벤션
+ * [CONTRIBUTING.md](https://github.com/Apptive2022-1/.github/blob/main/docs/CONTRIBUTING.md): 코딩 컨벤션, 브랜치 관리 전략 등 동아리 컨벤션
  * Package Convention: 아키텍처를 고려한 패키지 컨벤션
  * Code Review Guide: 코드 리뷰 가이드라인
  * Pair Programming: 페어 프로그래밍 가이드라인
