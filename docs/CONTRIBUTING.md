@@ -4,8 +4,8 @@ Issue 화면            |  Pull Request 화면
 ![표시 위치](https://user-images.githubusercontent.com/51331195/156929682-66c7647c-666f-4652-bbae-3ef0f91ca9a8.png) | ![표시 위치](https://user-images.githubusercontent.com/51331195/156929788-9000a4a0-e102-4034-8dd2-d1ee9c8df373.png)
 
 
- 이 문서는 Pull Request, Issue 작성 시 참고하기 위한 문서입니다.  
- 이 페이지에 대한 링크는 위와 같이 자동으로 PR, Issue 화면에 자동으로 표시됩니다.
+ 이 문서에서는 동아리에서 권장하는 컨벤션 및 협업 가이드라인을 설명합니다.
+ 이 페이지에 대한 링크는 위와 같이 PR, Issue 화면에 자동으로 표시됩니다.
  
 ## 목차
 1. [브랜치 관리 전략](#브랜치-관리-전략)
@@ -33,6 +33,11 @@ Issue 화면            |  Pull Request 화면
 - PR 제목은 처리한 작업을 알 수 있도록 적는다.
 
 ### Commit
+ : 커밋 메시지는 [AngularJS Git Commit Convention](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#heading=h.uyo6cb12dt6w)을 기초로 합니다. 자세한 내용은 별도 문서를 참고해주세요.
+ * 커밋은 시간 순서대로 쌓는다.
+ * 커밋 제목은 히스토리로부터 변경 내역을 쉽게 알 수 있도록 적는다.
+ * 서로 밀접한 연관 또는 종속성을 갖는 변경내역은 하나의 커밋으로 합친다.
+ * 커밋 제목에는 반드시 접두사를 붙인다.
 
 ## 코드 리뷰
 
