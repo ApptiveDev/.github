@@ -33,7 +33,7 @@ Issue 화면            |  Pull Request 화면
 - PR 제목은 처리한 작업을 알 수 있도록 적는다.
 
 ### Commit
- : 커밋 메시지는 [AngularJS Git Commit Convention](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#heading=h.uyo6cb12dt6w)을 기초로 합니다. 자세한 내용은 별도 문서를 참고해주세요.
+ : 커밋 메시지는 [AngularJS Git Commit Convention](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#heading=h.uyo6cb12dt6w)을 기초로 합니다.  자세한 내용은 별도 문서를 참고해주세요. (요약본 정리 예정)
  * 커밋은 시간 순서대로 쌓는다.
  * 커밋 제목은 히스토리로부터 변경 내역을 쉽게 알 수 있도록 적는다.
  * 서로 밀접한 연관 또는 종속성을 갖는 변경내역은 하나의 커밋으로 합친다.
