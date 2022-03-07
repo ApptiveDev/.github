@@ -17,8 +17,8 @@ Issue 화면            |  Pull Request 화면
 4. [버전과 릴리즈](#버전과-릴리즈)
 
 ## 브랜치 관리 전략
-![Untitled (2)](https://user-images.githubusercontent.com/51331195/156833254-74e245b7-980d-4162-a6d6-eae32ea2860b.png)
- 브랜치 관리 전략은 간단한 Github Flow를 따르고자 합니다.
+![image](https://user-images.githubusercontent.com/51331195/156977445-fad7d1bf-eac8-4fbd-aea5-4d6b80beef21.png)  
+ 브랜치 관리 전략은 간단하게 Github Flow를 따르고자 합니다.
  
 ### Github Flow
 - **master**와 브랜치로 구성된다.
