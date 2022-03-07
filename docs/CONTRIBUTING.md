@@ -4,7 +4,7 @@ Issue 화면            |  Pull Request 화면
 ![표시 위치](https://user-images.githubusercontent.com/51331195/156929682-66c7647c-666f-4652-bbae-3ef0f91ca9a8.png) | ![표시 위치](https://user-images.githubusercontent.com/51331195/156929788-9000a4a0-e102-4034-8dd2-d1ee9c8df373.png)
 
 
- 이 문서에서는 동아리에서 권장하는 컨벤션 및 협업 가이드라인을 설명합니다.
+ 이 문서에서는 동아리에서 권장하는 컨벤션 및 협업 가이드라인을 설명합니다.  
  이 페이지에 대한 링크는 위와 같이 PR, Issue 화면에 자동으로 표시됩니다.
  
 ## 목차
@@ -14,6 +14,7 @@ Issue 화면            |  Pull Request 화면
    3. [Commit](#commit)
 2. [코드 리뷰](#코드-리뷰)  
 3. [코딩 컨벤션](#코딩-컨벤션)  
+4. [버전과 릴리즈](#버전과-릴리즈)
 
 ## 브랜치 관리 전략
 ![Untitled (2)](https://user-images.githubusercontent.com/51331195/156833254-74e245b7-980d-4162-a6d6-eae32ea2860b.png)
@@ -42,3 +43,7 @@ Issue 화면            |  Pull Request 화면
 ## 코드 리뷰
 
 ## 코딩 컨벤션
+
+## 버전과 릴리즈
+
+
