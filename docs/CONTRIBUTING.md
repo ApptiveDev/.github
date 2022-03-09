@@ -21,7 +21,7 @@ Issue 화면            |  Pull Request 화면
 ## 브랜치 관리 전략
 ![image](https://user-images.githubusercontent.com/51331195/156977445-fad7d1bf-eac8-4fbd-aea5-4d6b80beef21.png)  
  브랜치 관리 전략은 간단하게 Github Flow를 따르고자 합니다.  
- 앱을 출시하게 되면 Git Flow로 전환할 수 있습니다.
+ 앱 출시가 가까워지면 Git Flow로 전환할 수 있습니다.
  
 ### Github Flow
 - **master**와 브랜치로 구성된다.
@@ -37,7 +37,7 @@ Issue 화면            |  Pull Request 화면
 - PR 제목은 처리한 작업을 알 수 있도록 적는다.
 
 ### Commit
- : 동아리 커밋 컨벤션은 [Commit Convention](https://github.com/Apptive2022-1/.github/blob/main/docs/Commit%20Convention.md)를 참고해주세요. 아래는 그중에서 중요한 항목들입니다.
+: 자세한 내용은 [Commit Convention](https://github.com/Apptive2022-1/.github/blob/main/docs/Commit%20Convention.md)을 참고해주세요.
  * 커밋은 시간 순서대로 쌓는다.
  * 커밋 제목은 히스토리로부터 변경 내역을 쉽게 알 수 있도록 적는다.
  * 서로 밀접한 연관 또는 종속성을 갖는 변경내역은 하나의 커밋으로 합친다.
