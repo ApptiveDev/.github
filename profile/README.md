@@ -15,8 +15,8 @@
  이슈, PR 템플릿은 모든 리포지토리에 자동으로 적용됩니다.
  
  * [CONTRIBUTING.md](https://github.com/Apptive2022-1/.github/blob/main/docs/CONTRIBUTING.md): 동아리 협업 가이드라인 및 컨벤션 전체
+ * [Commit Convention](https://github.com/Apptive2022-1/.github/blob/main/docs/Commit%20Convention.md): 커밋 컨벤션 상세
  * Package Convention: 아키텍처를 고려한 패키지 컨벤션
  * Code Review Guide: 코드 리뷰 가이드라인
  * Pair Programming: 페어 프로그래밍 가이드라인
- * Commit Convention: 커밋 컨벤션 상세
  * Kotlin Coding Convention: 코틀린 코딩 컨벤션 상세

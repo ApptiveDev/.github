@@ -8,13 +8,15 @@ Issue 화면            |  Pull Request 화면
  이 페이지에 대한 링크는 위와 같이 PR, Issue 화면에 자동으로 표시됩니다.
  
 ## 목차
-1. [브랜치 관리 전략](#브랜치-관리-전략)
-   1. [Github Flow](#github-flow)
-   2. [Pull Request](#pull-request)
-   3. [Commit](#commit)
-2. [코드 리뷰](#코드-리뷰)  
-3. [코딩 컨벤션](#코딩-컨벤션)  
-4. [버전과 릴리즈](#버전과-릴리즈)
+- [CONTRIBUTING.md](#contributingmd)
+  - [목차](#목차)
+  - [브랜치 관리 전략](#브랜치-관리-전략)
+    - [Github Flow](#github-flow)
+    - [Pull Request](#pull-request)
+    - [Commit](#commit)
+  - [코드 리뷰](#코드-리뷰)
+  - [코딩 컨벤션](#코딩-컨벤션)
+  - [버전과 릴리즈](#버전과-릴리즈)
 
 ## 브랜치 관리 전략
 ![image](https://user-images.githubusercontent.com/51331195/156977445-fad7d1bf-eac8-4fbd-aea5-4d6b80beef21.png)  
@@ -35,7 +37,7 @@ Issue 화면            |  Pull Request 화면
 - PR 제목은 처리한 작업을 알 수 있도록 적는다.
 
 ### Commit
- : 커밋 메시지는 [AngularJS Git Commit Convention](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#heading=h.uyo6cb12dt6w)을 기초로 합니다.  자세한 내용은 별도 문서를 참고해주세요. (요약본 정리 예정)
+ : 동아리 커밋 컨벤션은 [Commit Convention](https://github.com/Apptive2022-1/.github/blob/main/docs/Commit%20Convention.md)를 참고해주세요. 아래는 그중에서 중요한 항목들입니다.
  * 커밋은 시간 순서대로 쌓는다.
  * 커밋 제목은 히스토리로부터 변경 내역을 쉽게 알 수 있도록 적는다.
  * 서로 밀접한 연관 또는 종속성을 갖는 변경내역은 하나의 커밋으로 합친다.
