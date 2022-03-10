@@ -81,5 +81,8 @@ Issue 화면            |  Pull Request 화면
 ## 코딩 컨벤션
 
 ## 버전과 릴리즈
+| Semantic Versioning |
+|:-------------------:|
+|![SemVer)](https://user-images.githubusercontent.com/51331195/157697539-25121f51-91ea-4afb-af9e-3e8133c7ebe8.png) |
 
 
