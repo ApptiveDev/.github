@@ -9,14 +9,14 @@ Issue 화면            |  Pull Request 화면
  
 ## 📌 목차
 - [CONTRIBUTING.md](#contributingmd)
-  - [목차](#-목차)
-  - [브랜치 관리 전략](#-브랜치-관리-전략)
+  - [📌 목차](#-목차)
+  - [🔱 브랜치 관리 전략](#-브랜치-관리-전략)
     - [Github Flow](#github-flow)
     - [Pull Request](#pull-request)
     - [Commit](#commit)
-  - [코드 리뷰](#%EF%B8%8F-코드-리뷰)
-  - [패키지 컨벤션](#-패키지-컨벤션)
-  - [코딩 컨벤션](#-코딩-컨벤션)
+  - [✔️ 코드 리뷰](#️-코드-리뷰)
+  - [📂 패키지 컨벤션](#-패키지-컨벤션)
+  - [💅 코딩 컨벤션](#-코딩-컨벤션)
   - [버전과 릴리즈](#버전과-릴리즈)
     - [버전](#버전)
     - [릴리즈](#릴리즈)
@@ -55,6 +55,7 @@ Issue 화면            |  Pull Request 화면
       * 문제가 없으면 'Approve' 표식 달기
       * 의견, 우려되는 부분 등은 'Comment' 또는 'Request Changes' 표식 달기
  3. **코드 작성자**는 리뷰를 읽고 수정 후 Merge합니다.
+      * 하루 이상 리뷰가 진행되지 않는다면 임의로 Merge 가능
    
 ## 📂 패키지 컨벤션
  패키지 컨벤션(프로젝트 구조)는 기본적으로 다음을 따릅니다. 이는 [Clean Architecture](https://developer.android.com/jetpack/guide)와 [Presentation-Domain-Data](https://martinfowler.com/bliki/PresentationDomainDataLayering.html) 레이어를 기초로 합니다. 자세한 내용은 [별도 문서](https://github.com/Apptive2022-1/.github/blob/main/docs/Package%20Convention.md)를 참고해주세요.
