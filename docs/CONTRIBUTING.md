@@ -15,6 +15,7 @@ Issue 화면            |  Pull Request 화면
     - [Pull Request](#pull-request)
     - [Commit](#commit)
   - [코드 리뷰](#코드-리뷰)
+  - [패키지 컨벤션](#패키지-컨벤션)
   - [코딩 컨벤션](#코딩-컨벤션)
   - [버전과 릴리즈](#버전과-릴리즈)
 
@@ -44,6 +45,38 @@ Issue 화면            |  Pull Request 화면
  * 커밋 제목에는 반드시 접두사를 붙인다.
 
 ## 코드 리뷰
+
+## 패키지 컨벤션
+ 패키지 컨벤션(프로젝트 구조)는 기본적으로 다음을 따릅니다. 이는 [Clean Architecture](https://developer.android.com/jetpack/guide)와 [Presentation-Domain-Data](https://martinfowler.com/bliki/PresentationDomainDataLayering.html) 레이어를 기초로 합니다. 자세한 내용은 [별도 문서](https://github.com/Apptive2022-1/.github/blob/main/docs/Package%20Convention.md)를 참고해주세요.
+ ```m
+|-app
+    |- _constants         // Color, Size 등 UI 요소
+    |- _enums             
+    |- data
+        |- room
+            |- dao
+            |- entity
+        |- network
+            |- dto
+            |- api        // SharedPreference, Datastore 등
+        |- storage
+    |- domain
+        |- interfaces
+        |- mapper         // data <-> domain 맵퍼
+        |- model
+        |- repository
+        |- utils          // 컨트롤러 등
+    |- presentation
+        |- mapper         // domain <-> presentation 맵퍼
+        |- model
+        |- component      // 공통으로 사용할 UI 컴포넌트 (공유 컴포저블 등)
+        |- view
+            |- <화면1>
+            |- <화면2>
+            |- ...
+        |- viewmodel
+        |- navigation
+``` 
 
 ## 코딩 컨벤션
 
