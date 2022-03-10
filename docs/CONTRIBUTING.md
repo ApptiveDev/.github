@@ -18,6 +18,8 @@ Issue 화면            |  Pull Request 화면
   - [패키지 컨벤션](#패키지-컨벤션)
   - [코딩 컨벤션](#코딩-컨벤션)
   - [버전과 릴리즈](#버전과-릴리즈)
+    - [버전](#버전)
+    - [릴리즈](#릴리즈)
 
 ## 브랜치 관리 전략
 ![image](https://user-images.githubusercontent.com/51331195/156977445-fad7d1bf-eac8-4fbd-aea5-4d6b80beef21.png)  
@@ -79,10 +81,23 @@ Issue 화면            |  Pull Request 화면
 ``` 
 
 ## 코딩 컨벤션
-
+ 코드 스타일을 맞추면 가독성이 좋아져 코드리뷰하기 편해집니다. 네이밍 룰(파스칼, 스네이크 등)부터 클래스 멤버 순서, 중괄호 생략 여부, 가로/세로 공백 등 영역이 다양하여, 페어 프로그래밍이나 코드 리뷰를 통해 천천히 맞추어 나가기를 추천합니다. 컨벤션 문서는 다음을 참고해주세요.
+  - **한글**: [코틀린 스타일 가이드 - 구글](https://developer.android.com/kotlin/style-guide?hl=ko)
+  - **영어**: [Kotlin Coding Convention](https://kotlinlang.org/docs/coding-conventions.html)
+  
 ## 버전과 릴리즈
 | Semantic Versioning |
 |:-------------------:|
 |![SemVer)](https://user-images.githubusercontent.com/51331195/157697539-25121f51-91ea-4afb-af9e-3e8133c7ebe8.png) |
 
-
+Versioning은 팀원과 소통하고 협업하기 위한 수단입니다. 산출물로 **릴리즈 노트**를 작성하게 되고, 기획자와 디자이너 등 테스터는 이슈와 피드백을 전달합니다. 다음 버전은 이 이슈와 피드백을 반영해야 합니다.
+### 버전
+- 테스팅이 가능한 시점부터 0.1.0이다.
+- 페이지 및 기능 단위로 쪼개 개발한다.
+- 이슈와 피드백은 Github 이슈에 등록하여 관리한다.
+- 릴리즈 노트는 협업툴 (Notion 등)이나 Github 레포지토리를 활용한다.
+-  회의 → 피드백 → 개발 → 버전업 → 회의 사이클을 되도록 준수한다.
+### 릴리즈
+- Github Repository의 자동완성 기능을 활용한다.
+- 변경사항, 버그수정 등 사용자의 관점에서 작성한다.
+- 리팩토링 내역 등은 포함할 필요 없다.
