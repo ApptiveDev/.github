@@ -1,12 +1,12 @@
 # 페어 프로그래밍
 > "Pair programmers: Keep each other on task. Brainstorm refinements to the system. Clarify ideas. Take initiative when their partner is stuck, thus lowering frustration. Hold each other accountable to the team’s practices. Pairing." - 켄트 벡
 
-페어 프로그래밍은 두 명이 한 컴퓨터를 마주보고 함께 코딩하는 것을 말합니다. 직접 코딩하는 역할은 **Driver**, 뒤에서 리뷰하며 이런저런 제언을 하는 역할을 **Navigator**로 정의합니다. 
+페어 프로그래밍은 두 명이 한 컴퓨터를 마주보고 함께 코딩하는 것을 말합니다. 직접 코딩하는 역할은 **Driver**, 뒤에서 리뷰하며 이런저런 제언을 하는 역할을 **Navigator**라 합니다.
 
 ## 목적
-* 서로 코딩 스타일을 맞추어가기 좋다.
+* 서로 코딩 스타일을 맞춘다.
 * 실시간으로 리뷰하며 코드 품질을 높인다.
-* 프로젝트 초반에 공통 영역을 함께 설계한다.
+* 프로젝트 초반에 공통 영역을 함께 설계하고 구현한다.
 
 ## 가이드라인
 * 시작 전에 달성할 목표를 분명히 정한다.
