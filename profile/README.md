@@ -18,5 +18,5 @@
  * [Commit Convention](https://github.com/Apptive2022-1/.github/blob/main/docs/Commit%20Convention.md): 커밋 컨벤션 상세
  * [Pair Programming](https://github.com/Apptive2022-1/.github/blob/main/docs/Pair%20Programming.md): 페어 프로그래밍 가이드라인
  * [Package Convention](https://github.com/Apptive2022-1/.github/blob/main/docs/Package%20Convention.md): 아키텍처를 고려한 패키지 컨벤션
- * Code Review Guide: 코드 리뷰 가이드라인
+ * [Code Review Guide](https://github.com/Apptive2022-1/.github/blob/main/docs/Code%20Review.md): 코드 리뷰 가이드라인
  * Kotlin Coding Convention: 코틀린 코딩 컨벤션 상세 (추가 바람)
