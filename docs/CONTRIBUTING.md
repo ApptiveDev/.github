@@ -35,7 +35,7 @@ Issue 화면            |  Pull Request 화면
 
 ### Pull Request
 - PR 이전에 1차적으로 구동 테스트를 한다.
-- PR은 버그 해결, 기능 조각 구현 등 작은 단위가 좋다.
+- PR은 버그 해결, 기능 조각 구현 등 작은 단위가 좋다. (변경 라인수 약 200~400줄)
 - 무거운 기능 구현은 중간중간 PR을 올린다.
 - PR 제목은 처리한 작업을 알 수 있도록 적는다.
 
@@ -47,7 +47,15 @@ Issue 화면            |  Pull Request 화면
  * 커밋 제목에는 반드시 접두사를 붙인다.
 
 ## 코드 리뷰
-
+ : 자세한 내용은 별도 문서를 참고해주세요
+ 1.  **코드 작성자**는 변경내역을 요약하여 PR을 올립니다.
+      * 변경내역이 너무 많지 않도록 분량 조절
+      * 관련된 이슈는 #(이슈번호) 붙이기
+ 2.  **리뷰어**는 코드를 천천히 읽어봅니다.
+      * 문제가 없으면 'Approve' 표식 달기
+      * 의견, 우려되는 부분 등은 'Comment' 또는 'Request Changes' 표식 달기
+ 3. **코드 작성자**는 리뷰를 읽고 수정 후 Merge합니다.
+   
 ## 패키지 컨벤션
  패키지 컨벤션(프로젝트 구조)는 기본적으로 다음을 따릅니다. 이는 [Clean Architecture](https://developer.android.com/jetpack/guide)와 [Presentation-Domain-Data](https://martinfowler.com/bliki/PresentationDomainDataLayering.html) 레이어를 기초로 합니다. 자세한 내용은 [별도 문서](https://github.com/Apptive2022-1/.github/blob/main/docs/Package%20Convention.md)를 참고해주세요.
  ```m
