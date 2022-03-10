@@ -7,21 +7,21 @@ Issue 화면            |  Pull Request 화면
  이 문서에서는 동아리에서 권장하는 컨벤션 및 협업 가이드라인을 설명합니다.  
  이 페이지에 대한 링크는 위와 같이 PR, Issue 화면에 자동으로 표시됩니다.
  
-## 목차
+## 📌 목차
 - [CONTRIBUTING.md](#contributingmd)
-  - [목차](#목차)
-  - [브랜치 관리 전략](#브랜치-관리-전략)
+  - [목차](#-목차)
+  - [브랜치 관리 전략](#-브랜치-관리-전략)
     - [Github Flow](#github-flow)
     - [Pull Request](#pull-request)
     - [Commit](#commit)
-  - [코드 리뷰](#코드-리뷰)
-  - [패키지 컨벤션](#패키지-컨벤션)
-  - [코딩 컨벤션](#코딩-컨벤션)
+  - [코드 리뷰](#%EF%B8%8F-코드-리뷰)
+  - [패키지 컨벤션](#-패키지-컨벤션)
+  - [코딩 컨벤션](#-코딩-컨벤션)
   - [버전과 릴리즈](#버전과-릴리즈)
     - [버전](#버전)
     - [릴리즈](#릴리즈)
 
-## 브랜치 관리 전략
+## 🔱 브랜치 관리 전략
 ![image](https://user-images.githubusercontent.com/51331195/156977445-fad7d1bf-eac8-4fbd-aea5-4d6b80beef21.png)  
  브랜치 관리 전략은 간단하게 Github Flow를 따르고자 합니다.  
  앱 출시가 가까워지면 Git Flow로 전환할 수 있습니다.
@@ -46,7 +46,7 @@ Issue 화면            |  Pull Request 화면
  * 서로 밀접한 연관 또는 종속성을 갖는 변경내역은 하나의 커밋으로 합친다.
  * 커밋 제목에는 반드시 접두사를 붙인다.
 
-## 코드 리뷰
+## ✔️ 코드 리뷰
  : 자세한 내용은 별도 문서를 참고해주세요
  1.  **코드 작성자**는 변경내역을 요약하여 PR을 올립니다.
       * 변경내역이 너무 많지 않도록 분량 조절
@@ -56,7 +56,7 @@ Issue 화면            |  Pull Request 화면
       * 의견, 우려되는 부분 등은 'Comment' 또는 'Request Changes' 표식 달기
  3. **코드 작성자**는 리뷰를 읽고 수정 후 Merge합니다.
    
-## 패키지 컨벤션
+## 📂 패키지 컨벤션
  패키지 컨벤션(프로젝트 구조)는 기본적으로 다음을 따릅니다. 이는 [Clean Architecture](https://developer.android.com/jetpack/guide)와 [Presentation-Domain-Data](https://martinfowler.com/bliki/PresentationDomainDataLayering.html) 레이어를 기초로 합니다. 자세한 내용은 [별도 문서](https://github.com/Apptive2022-1/.github/blob/main/docs/Package%20Convention.md)를 참고해주세요.
  ```m
 |-app
@@ -88,7 +88,7 @@ Issue 화면            |  Pull Request 화면
         |- navigation
 ``` 
 
-## 코딩 컨벤션
+## 💅 코딩 컨벤션
  코드 스타일을 맞추면 가독성이 좋아져 코드리뷰하기 편해집니다. 네이밍 룰(파스칼, 스네이크 등)부터 클래스 멤버 순서, 중괄호 생략 여부, 가로/세로 공백 등 영역이 다양하여, 페어 프로그래밍이나 코드 리뷰를 통해 천천히 맞추어 나가기를 추천합니다. 컨벤션 문서는 다음을 참고해주세요.
   - **한글**: [코틀린 스타일 가이드 - 구글](https://developer.android.com/kotlin/style-guide?hl=ko)
   - **영어**: [Kotlin Coding Convention](https://kotlinlang.org/docs/coding-conventions.html)
