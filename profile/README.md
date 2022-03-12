@@ -20,3 +20,5 @@
  * [Package Convention](https://github.com/Apptive2022-1/.github/blob/main/docs/Package%20Convention.md): 아키텍처를 고려한 패키지 컨벤션
  * [Code Review Guide](https://github.com/Apptive2022-1/.github/blob/main/docs/Code%20Review.md): 코드 리뷰 가이드라인
  * Kotlin Coding Convention: 코틀린 코딩 컨벤션 상세 (추가 바람)
+
+각 문서는 완전하지 않습니다. 프로젝트를 진행하면서 부족한 부분은 자유롭게 개선해주세요.
