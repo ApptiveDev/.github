@@ -15,6 +15,7 @@
  코드리뷰, 컨벤션 등 동아리 가이드라인을 설명합니다. 천천히 읽어주세요 :smiley:  
  이슈, PR 템플릿은 모든 리포지토리에 자동으로 적용됩니다.
  
+ * [Project_Naming_Rule.md](https://github.com/Apptive2022-1/.github/blob/main/docs/Project_Naming_Rule.md): 프로젝트 네이밍 규칙
  * [CONTRIBUTING.md](https://github.com/Apptive2022-1/.github/blob/main/docs/CONTRIBUTING.md): 동아리 협업 가이드라인 및 컨벤션 전체
  * [Commit Convention](https://github.com/Apptive2022-1/.github/blob/main/docs/Commit%20Convention.md): 커밋 컨벤션 상세
  * [Pair Programming](https://github.com/Apptive2022-1/.github/blob/main/docs/Pair%20Programming.md): 페어 프로그래밍 가이드라인
