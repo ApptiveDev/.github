@@ -5,23 +5,22 @@
 ### 한글 키보드
 🔗 [Ubuntu 20.04 키보드 한글 입력 설정 하기](https://shanepark.tistory.com/231)  
 
-### KDE Plasma
+## Shell
 
-
-## Zsh
+### Zsh
 &nbsp;zsh은 리눅스 기본 bash 보다 다양한 확장 기능을 제공하는 터미널 쉘입니다. 터미널 테마와 자동완성, 텍스트 하이라이트 등 유용한 플러그인 덕분에 개발에 필수적이라 할 수 있습니다. Zsh은 Mac OS의 기본 터미널 쉘이기도 합니다.  
 **설치방법**: 🔗 [Install and Setup ZSH on Ubuntu Linux](https://itsfoss.com/zsh-ubuntu/#install-zsh-on-ubuntu)
 ```bash
-// zsh 설치 및 첫 환경설정
+# zsh 설치 및 첫 환경설정
 $ sudo apt install zsh git fonts-font-awesome
 $ zsh          // 주로 0번이나 1번 선택
 $ which zsh    // 설치여부 확인
 
-// zsh을 기본 쉘로 설정 (-s = 특정 쉘로 설정)
-// 설정 이후 재로그인 또는 재부팅 필요
+# zsh을 기본 쉘로 설정 (-s = 특정 쉘로 설정)
+# 설정 이후 재로그인 또는 재부팅 필요
 $ chsh -s $(which zsh)
 ```
-### Oh My Zsh
+#### Oh My Zsh
 &nbsp;OMZ는 Zsh에 다양한 부가 기능을 추가 및 관리해주는 플러그인입니다. 대표적으로 자동완성, 간편한 명령어 별명 기능 등이 있습니다. 아래 커맨드라인을 통해 설치가 완료되면 ```.zshrc```가 업데이트되며, 자동으로 OMZ가 반영됩니다.  
 **설치방법**: 🔗 [Oh My Zsh Installation](https://github.com/ohmyzsh/ohmyzsh/tree/master#basic-installation)
 ```bash
@@ -30,9 +29,10 @@ wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 sh install.sh
 ```
 
-### 플러그인 (Auto Suggestion, Syntax Highlight, ...)
+#### 플러그인 (Auto Suggestion, Syntax Highlight, ...)
 ![image](https://github.com/ApptiveDev/.github/assets/51331195/98b9c881-5707-4f52-b1e1-6a15eade34b1)
-
+- Auto Suggestion: 최근 사용한 명령어를 자동으로 추천해주는 기능
+- Syntax Highlighting: 문자열, 유저명 등 텍스트에 색상을 입히는 기능. 잘못된 명령어는 빨간색으로 표시됨.
 **설치방법**
 - 🔗 [Auto Suggestion](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh)
 - 🔗 [Syntax Highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh)  
@@ -54,6 +54,15 @@ plugins=(
 
 # zsh 새로고침
 $ source ~/.zshrc
+```
+
+### Terminator
+![image](https://github.com/ApptiveDev/.github/assets/51331195/c57fd26b-fbef-4f88-a159-f93d2f466822)  
+Terminator는 한 터미널 창에서 여러 터미널을 분할해 사용할 수 있도록 하는 프로그램입니다. 더 확장된 프로그램으로 `tmux`를 사용할 수 있습니다.
+```bash
+# Terminator 설치 및 기본 터미널로 설정 (Ctrl + Alt + T)
+$ sudo apt install terminator
+$ sudo update-alternatives --config x-terminal-emulator
 ```
 
 ## Program
