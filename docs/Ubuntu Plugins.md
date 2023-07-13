@@ -5,6 +5,29 @@
 ### 한글 키보드
 🔗 [Ubuntu 20.04 키보드 한글 입력 설정 하기](https://shanepark.tistory.com/231)  
 
+## Tools
+
+### Vim
+ vim은 텍스트 에디터로, 각종 config 파일이나 YAML, XML 등의 파일을 편집할 때 자주 사용하고, 특히 git 커밋 메시지 등을 편집할 때 유용합니다.
+```bash
+$ sudo apt-get update
+$ sudo apt-get install vim 
+```
+
+### Git
+```bash
+# git 설치
+$ sudo apt-get update
+$ sudo apt-get install git
+
+# git 기본 텍스트 에디터로 vim 설정
+$ git config --global core.editor "vim"
+```
+
+### Docker
+🔗 [Official Installation](https://docs.docker.com/engine/install/ubuntu/)  
+흔히 말하는 컨테이너 플랫폼인 Docker는 **Docker Engine**을 뜻합니다. Docker는 가상화를 위해 Linux의 내장 Virtual Machine 기능을 요구하며, **Docker Desktop**은 Linux가 아닌 다른 운영체제(Windows, Mac)에서 이를 지원하기 위한 GUI 도구입니다. 따라서 리눅스는 Docker Engine을 설치하고, 다른 운영체제는 Docker Desktop을 설치해야 합니다. 위에서 apt repository 등록 및 Docker Engine 설치 절차를 따르시기 바랍니다.
+
 ## Shell
 
 ### Zsh
