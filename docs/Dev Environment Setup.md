@@ -7,8 +7,6 @@
   - [한글 키보드](#한글-키보드)
 - [Shell Setting](#shell-setting)
   - [Zsh](#zsh)
-    - [Oh My Zsh](#oh-my-zsh)
-    - [플러그인 (Auto Suggestion, Syntax Highlight, ...)](#플러그인-auto-suggestion-syntax-highlight-)
   - [Terminator](#terminator)
 - [Tools](#tools)
   - [Vim](#vim)
