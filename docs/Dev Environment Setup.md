@@ -3,9 +3,8 @@
   - [Why Linux/Mac](#why-linuxmac)
   - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [System Setting](#system-setting)
+- [System/Shell](#systemshell)
   - [한글 키보드](#한글-키보드)
-- [Shell Setting](#shell-setting)
   - [Zsh](#zsh)
   - [Terminator](#terminator)
 - [Tools](#tools)
@@ -40,11 +39,9 @@
 
  우분투 설치 시 파티션 축소를 건너뛰고 `Windows를 그대로 두고 설치` 옵션을 선택해도 됩니다. 그러면 파티션 설정을 우분투 설치 중에 하게 됩니다. (노트북이나 BIOS 설정에 따라 안 되는 경우도 있음)
 
-## System Setting
+## System/Shell
 ### 한글 키보드
 🔗 [Ubuntu 키보드 한글 입력 설정 하기](https://shanepark.tistory.com/231)  
-
-## Shell Setting
 
 ### Zsh
 &nbsp;zsh은 리눅스 기본 bash 보다 다양한 확장 기능을 제공하는 터미널 쉘입니다. 터미널 테마와 자동완성, 텍스트 하이라이트 등 유용한 플러그인 덕분에 개발에 필수적이라 할 수 있습니다. Zsh은 Mac OS의 기본 터미널 쉘이기도 합니다.  
