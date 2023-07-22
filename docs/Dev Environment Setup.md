@@ -13,7 +13,8 @@
   - [Git](#git)
   - [Docker](#docker)
 - [Program](#program)
-  - [pinta (화면 캡처)](#pinta-화면-캡처)
+  - [VS Code](#vscode)
+  - [pinta (그림판)](#pinta-그림판)
   - [obs-studio (화면 녹화)](#obs-studio-화면-녹화)
 
 
@@ -129,7 +130,21 @@ $ git config --global core.editor "vim"
 흔히 말하는 컨테이너 플랫폼인 Docker는 **Docker Engine**을 뜻합니다. Docker는 가상화를 위해 Linux의 내장 Virtual Machine 기능을 요구하며, **Docker Desktop**은 Linux가 아닌 다른 운영체제(Windows, Mac)에서 이를 지원하기 위한 GUI 도구입니다. 따라서 리눅스는 Docker Engine을 설치하고, 다른 운영체제는 Docker Desktop을 설치해야 합니다. 위에서 apt repository 등록 및 Docker Engine 설치 절차를 따르시기 바랍니다.
 
 ## Program
-### pinta (화면 캡처)
+### VSCode
+**(설치방법)**
+먼저 [VS Code](https://code.visualstudio.com/download)에서 .deb 파일을 다운로드한 후 다음 명령어를 실행합니다.
+```
+$ sudo apt install ~/Downloads/<파일명>.deb
+$ code --version
+```
+
+**추천 확장프로그램**
+- **GitLens**: 에디터에서 어떤 부분이 어떤 커밋에 의해 수정되었는지 알 수 있음
+- **GitGraph**: 커밋, 브랜치 히스토리를 시각적으로 표현
+- **Markdown All In One**: 마크다운 문서(.md) 편집 시 미리보기 가능
+- **Markdown Emoji**: 마크다운 미리보기에서 이모티콘까지 렌더링 (단, 이모티콘 텍스트는 [여기](https://gist.github.com/rxaviers/7360908)서 확인)
+
+### pinta (그림판)
 ![image](https://github.com/ApptiveDev/.github/assets/51331195/06d7dc22-7b28-4690-b7a8-19cd556a74c4)  
 **(설치방법)**  
 [Ubuntu Software] -> Pinta 검색 및 설치
