@@ -15,12 +15,13 @@
  코드리뷰, 컨벤션 등 동아리 가이드라인을 설명합니다. 천천히 읽어주세요 :smiley:  
  이슈, PR 템플릿은 모든 리포지토리에 자동으로 적용됩니다.
  
- * [Project_Naming_Rule.md](https://github.com/Apptive2022-1/.github/blob/main/docs/Project_Naming_Rule.md): 프로젝트 네이밍 규칙
  * [CONTRIBUTING.md](https://github.com/Apptive2022-1/.github/blob/main/docs/CONTRIBUTING.md): 동아리 협업 가이드라인 및 컨벤션 전체
+ * [Project Repository Setup](https://github.com/ApptiveDev/.github/blob/main/docs/Project%20Repository%20Setup.md): 동아리 프로젝트 리포지토리 설정
+ * [Dev Environment Setup](https://github.com/ApptiveDev/.github/blob/main/docs/Dev%20Environment%20Setup.md): 동아리 개발환경 설정 (리눅스)
  * [Commit Convention](https://github.com/Apptive2022-1/.github/blob/main/docs/Commit%20Convention.md): 커밋 컨벤션 상세
  * [Pair Programming](https://github.com/Apptive2022-1/.github/blob/main/docs/Pair%20Programming.md): 페어 프로그래밍 가이드라인
  * [Package Convention](https://github.com/Apptive2022-1/.github/blob/main/docs/Package%20Convention.md): 아키텍처를 고려한 패키지 컨벤션
  * [Code Review Guide](https://github.com/Apptive2022-1/.github/blob/main/docs/Code%20Review.md): 코드 리뷰 가이드라인
- * [Dev Environment Setup](https://github.com/ApptiveDev/.github/blob/main/docs/Dev%20Environment%20Setup.md): 동아리 개발환경 설정 (리눅스)
+
 
 각 문서는 완전하지 않습니다. 프로젝트를 진행하면서 부족한 부분은 자유롭게 개선해주세요.
