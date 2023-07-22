@@ -32,7 +32,7 @@
 ### Prerequisites
   - 16GB+ USB
   - [Ubuntu 22.04/23.04 이미지](https://ubuntu.com/download/desktop)
-  - 리눅스에 할당 가능한 100GB+의 여유공간 
+  - 리눅스에 할당 가능한 80GB+의 여유공간 
 ## Installation
  동아리는 Ubuntu 22.04LTS 또는 23.04를 기준으로 합니다. 설치는 다음 블로그 글을 참고하시기 바랍니다.
 1. 부팅 USB 만들기: [블로그 글](https://heisanbug.tistory.com/17)
