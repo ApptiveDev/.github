@@ -121,6 +121,32 @@ $ sudo apt-get install git
 # git 기본 텍스트 에디터로 vim 설정
 $ git config --global core.editor "vim"
 ```
+git 커맨드라인 환경 이용 시 ssh 방식의 원격 리포지토리 접근이 일반적입니다. HTTPs 방식은 매번 ID, 비밀번호를 입력해야 해서 번거롭습니다.  
+ssh도 설정을 하지 않으면 매번 계정을 입력해야 하는데, 편하게 사용하려면 아래 절차를 따라주시기 바랍니다.
+
+```bash
+# ssh key 생성 (RSA 방식)
+# 다른 방식도 무관하나 github가 이 형식을 지원해야 함.
+$ ssh-keygen -t rsa
+# 아래 프롬프트에서 키를 저장할 경로와 비밀번호 입력
+# 경로는 ~/.ssh/id_rsa_github와 같이 .ssh 폴더 내에 위치하도록 입력
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/<본인 계정>/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):  
+
+# 생성된 공개키(.pub) 출력 후 드래그하여 복사 후 Github에 등록
+# [Github 본인계정] > [Settings] > [SSH and GPG keys] > [New SSH Key]에 복사한 키 등록
+$ cat ~/.ssh/<저장한 키 파일>.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADA...
+
+# github.com에 대한 SSH 접근 시 자동으로 사용할 키를 로컬에 등록
+# config 파일 생성 후 아래 내용 입력 및 저장
+$ vi ~/.ssh/config
+Host *github*
+  User git
+  Hostname github.com
+  IdentityFile ~/.ssh/<생성한 파일명>
+```
 
 ### Docker
 🔗 [Official Installation](https://docs.docker.com/engine/install/ubuntu/)  
