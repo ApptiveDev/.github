@@ -120,6 +120,10 @@ $ sudo apt-get install git
 
 # git 기본 텍스트 에디터로 vim 설정
 $ git config --global core.editor "vim"
+
+# 커밋 작성자에 쓰일 계정정보 설정
+$ git config --global user.name <닉네임>
+$ git config --global user.email <계정 이메일 주소>
 ```
 git 커맨드라인 환경 이용 시 ssh 방식의 원격 리포지토리 접근이 일반적입니다. HTTPs 방식은 매번 ID, 비밀번호를 입력해야 해서 번거롭습니다.  
 ssh도 설정을 하지 않으면 매번 계정을 입력해야 하는데, 편하게 사용하려면 아래 절차를 따라주시기 바랍니다.
