@@ -31,7 +31,7 @@
 ### Prerequisites
   - 16GB+ USB
   - [Ubuntu 22.04/23.04 이미지](https://ubuntu.com/download/desktop)
-  - 리눅스에 할당 가능한 80GB+의 여유공간 
+  - 리눅스에 할당 가능한 100GB+의 여유공간 
 ## Installation
  동아리는 Ubuntu 22.04LTS 또는 23.04를 기준으로 합니다. 설치는 다음 블로그 글을 참고하시기 바랍니다.
 1. 부팅 USB 만들기: [블로그 글](https://heisanbug.tistory.com/17)
@@ -136,7 +136,7 @@ $ ssh-keygen -t rsa
 # 경로는 ~/.ssh/id_rsa_github와 같이 .ssh 폴더 내에 위치하도록 입력
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/<본인 계정>/.ssh/id_rsa):
-Enter passphrase (empty for no passphrase):  
+Enter passphrase (empty for no passphrase): # 비밀번호
 
 # 생성된 공개키(.pub) 출력 후 드래그하여 복사 후 Github에 등록
 # [Github 본인계정] > [Settings] > [SSH and GPG keys] > [New SSH Key]에 복사한 키 등록
@@ -168,6 +168,7 @@ $ code --version
 **추천 확장프로그램**
 - **GitLens**: 에디터에서 어떤 부분이 어떤 커밋에 의해 수정되었는지 알 수 있음
 - **GitGraph**: 커밋, 브랜치 히스토리를 시각적으로 표현
+- **Material Theme Icons**: 이쁜 파일/폴더 아이콘
 - **Markdown All In One**: 마크다운 문서(.md) 편집 시 미리보기 가능
 - **Markdown Emoji**: 마크다운 미리보기에서 이모티콘까지 렌더링 (단, 이모티콘 텍스트는 [여기](https://gist.github.com/rxaviers/7360908)서 확인)
 
