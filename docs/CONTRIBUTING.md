@@ -10,7 +10,7 @@ Issue 화면            |  Pull Request 화면
 ## 📌 목차
 - [📌 목차](#-목차)
 - [🔱 브랜치 관리 전략](#-브랜치-관리-전략)
-  - [Github Flow](#branch-github-flow)
+  - [Branch](#branch-github-flow)
   - [Pull Request](#pull-request)
   - [Commit](#commit)
 - [✔️ 코드 리뷰](#️-코드-리뷰)
@@ -23,9 +23,12 @@ Github Flow            |  Squash Merge
 :--------------------:|:------------------:
 ![image](https://user-images.githubusercontent.com/51331195/156977445-fad7d1bf-eac8-4fbd-aea5-4d6b80beef21.png) | ![im-developer.tistory.com/182](https://github.com/ApptiveDev/.github/assets/51331195/6191feb8-fedc-45b6-bbc4-7521400929f8)
   
- 동아리의 브랜치 관리 전략은 간단하게 Github Flow에 더해 Squash Merge를 기본으로 합니다. (가능할 경우 Git Flow 권장)  
+ 동아리의 브랜치 관리 전략은 간단하게 Github Flow에 더해 Squash Merge를 기본으로 합니다.  
  브랜치 관리 전략을 위한 리포지토리 세팅은 [별도 문서](https://github.com/ApptiveDev/.github/blob/main/docs/Project%20Repository%20Setup.md)를 참고해주세요.
+  > 브랜치 관리 전략에는 Github Flow, Git Flow, Gitlab Flow 등이 있습니다. 작은 규모일 경우 Git Flow는 필요 이상으로 복잡하게 하므로 초기 협업에는 Github Flow가 적당합니다. 서비스 구실을 갖추고, 팀의 규모가 늘어날 때쯤 다른 전략으로 변경하길 권장합니다.
+
  > Squash Merge는 브랜치가 병합될 때 커밋들이 PR 제목으로 합쳐지게 됩니다. 커밋은 개인마다 기준이 조금씩 다른 반면, PR/브랜치는 이슈 단위로 생성하므로 일관된 기준으로 커밋을 쌓을 수 있어 히스토리 추적을 용이하게 합니다.
+
  
 ### Branch (Github Flow)
 - **master**와 개인 브랜치로 구성된다.
