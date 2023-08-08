@@ -1,7 +1,7 @@
 ## 어서오세요 👋
 ![APPTIVE_로고_Slim](https://user-images.githubusercontent.com/51331195/156181586-db542fb4-be8e-42b8-93a3-dd5e3415e6bf.png)
 
-**부산대학교 대표 앱 개발 창업동아리 'APPTIVE'**  
+**부산대학교 대표 서비스 개발 창업동아리 'APPTIVE'**  
 (정보컴퓨터공학부 소속)
 
 2013년에 개설된 APPTIVE는 학과 및 학년 제한없이  
