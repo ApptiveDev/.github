@@ -28,10 +28,10 @@
 이제 main 브랜치에는 직접 커밋이 불가능하며, 코드리뷰를 모두 마친 Pull Request만으로 가능합니다.
 
 ## Squash Merge
-![Squash Merge](https://i.imgur.com/0Pl4fhv.png)  
+![Squash Merge](../images/repository-setting-squash-merge.jpg)  
 [Settings] > [General] > [Pull Requests]에서 다음 두 가지를 설정합니다.
 - `Allow squash merging`만 활성화
-- `Default to pull request title` 선택 
+- `Default to pull request title and description` 선택 
   
 앞으로 PR의 커밋들은 하나로 합쳐져서 병합되며 커밋 제목은 PR 제목으로 추가됩니다. 
 
