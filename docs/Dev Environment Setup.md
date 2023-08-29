@@ -3,11 +3,14 @@
   - [Why Linux/Mac](#why-linuxmac)
   - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [System/Shell](#systemshell)
+- [System](#system)
   - [Korean Keyboard](#korean-keyboard)
   - [Root Password](#root-password)
   - [Wayland (22.04)](#wayland-2204)
+- [Shell](#shell)
   - [Zsh](#zsh)
+  - [Oh My Zsh](#oh-my-zsh)
+  - [Plugins](#plugins)
   - [Terminator](#terminator)
 - [Tools](#tools)
   - [Vim](#vim)
@@ -17,6 +20,7 @@
   - [VS Code](#vscode)
   - [pinta (그림판)](#pinta-그림판)
   - [obs-studio (화면 녹화)](#obs-studio-화면-녹화)
+
 
 ## Overview
  이 문서에서는 동아리 프로젝트 개발에 유용한 우분투(리눅스) 설정 및 플러그인, 프로그램 등을 소개합니다. 동아리 개발문서는 리눅스를 기준으로 작성될 것이므로 윈도우를 이용하고 있다면 이 문서에 따라 개발환경을 설정하기를 권장합니다. 백엔드 개발자라면 반드시 리눅스나 MacOS 환경에서 개발하시기 바랍니다.
@@ -42,7 +46,7 @@
 
  우분투 설치 시 파티션 축소를 건너뛰고 `Windows를 그대로 두고 설치` 옵션을 선택해도 됩니다. 그러면 파티션 설정을 우분투 설치 중에 하게 됩니다. (노트북이나 BIOS 설정에 따라 안 되는 경우도 있음)
 
-## System/Shell
+## System
 ### Korean Keyboard
 🔗 [Ubuntu 키보드 한글 입력 설정 하기](https://shanepark.tistory.com/231)  
 
@@ -70,6 +74,7 @@ WaylandEnable=false # 주석 해제
 $ echo $XDG_SESSION_TYPE
 ```
 
+## Shell
 ### Zsh
 &nbsp;zsh은 리눅스 기본 bash 보다 다양한 확장 기능을 제공하는 터미널 쉘입니다. 터미널 테마와 자동완성, 텍스트 하이라이트 등 유용한 플러그인 덕분에 개발에 필수적이라 할 수 있습니다. Zsh은 Mac OS의 기본 터미널 쉘이기도 합니다.  
 **설치방법**: 🔗 [Install and Setup ZSH on Ubuntu Linux](https://itsfoss.com/zsh-ubuntu/#install-zsh-on-ubuntu)
@@ -83,7 +88,7 @@ $ which zsh    // 설치여부 확인
 # 설정 이후 재로그인 또는 재부팅 필요
 $ chsh -s $(which zsh)
 ```
-#### Oh My Zsh
+### Oh My Zsh
 &nbsp;OMZ는 Zsh에 다양한 부가 기능을 추가 및 관리해주는 플러그인입니다. 대표적으로 자동완성, 간편한 명령어 별명 기능 등이 있습니다. 아래 커맨드라인을 통해 설치가 완료되면 ```.zshrc```가 업데이트되며, 자동으로 OMZ가 반영됩니다.  
 **설치방법**: 🔗 [Oh My Zsh Installation](https://github.com/ohmyzsh/ohmyzsh/tree/master#basic-installation)
 ```bash
@@ -92,7 +97,7 @@ wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 sh install.sh
 ```
 
-#### 플러그인 (Auto Suggestion, Syntax Highlight, ...)
+### Plugins
 ![image](https://github.com/ApptiveDev/.github/assets/51331195/98b9c881-5707-4f52-b1e1-6a15eade34b1)
 - [Auto Suggestion](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh): 최근 사용한 명령어를 자동으로 추천해주는 기능
 - [Syntax Highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh) : 문자열, 유저명 등 텍스트에 색상을 입히는 기능. 잘못된 명령어는 빨간색으로 표시됨.
@@ -186,7 +191,7 @@ Host *github*
 ## Program
 ### VSCode
 **(설치방법)**
-먼저 [VS Code](https://code.visualstudio.com/download)에서 .deb 파일을 다운로드한 후 다음 명령어를 실행합니다.
+먼저 [VS Code](https://code.visualstudio.com/download)에서 .deb 파일을 다운로드한 후 다음 명령어를 실행합니다. 
 ```
 $ sudo apt install ~/Downloads/<파일명>.deb
 $ code --version
