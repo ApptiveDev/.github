@@ -4,7 +4,9 @@
   - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [System/Shell](#systemshell)
-  - [한글 키보드](#한글-키보드)
+  - [Korean Keyboard](#korean-keyboard)
+  - [Root Password](#root-password)
+  - [Wayland (22.04)](#wayland-2204)
   - [Zsh](#zsh)
   - [Terminator](#terminator)
 - [Tools](#tools)
@@ -15,7 +17,6 @@
   - [VS Code](#vscode)
   - [pinta (그림판)](#pinta-그림판)
   - [obs-studio (화면 녹화)](#obs-studio-화면-녹화)
-
 
 ## Overview
  이 문서에서는 동아리 프로젝트 개발에 유용한 우분투(리눅스) 설정 및 플러그인, 프로그램 등을 소개합니다. 동아리 개발문서는 리눅스를 기준으로 작성될 것이므로 윈도우를 이용하고 있다면 이 문서에 따라 개발환경을 설정하기를 권장합니다. 백엔드 개발자라면 반드시 리눅스나 MacOS 환경에서 개발하시기 바랍니다.
@@ -42,8 +43,32 @@
  우분투 설치 시 파티션 축소를 건너뛰고 `Windows를 그대로 두고 설치` 옵션을 선택해도 됩니다. 그러면 파티션 설정을 우분투 설치 중에 하게 됩니다. (노트북이나 BIOS 설정에 따라 안 되는 경우도 있음)
 
 ## System/Shell
-### 한글 키보드
+### Korean Keyboard
 🔗 [Ubuntu 키보드 한글 입력 설정 하기](https://shanepark.tistory.com/231)  
+
+### Root Password
+root 계정으로 시스템을 설정해야 하거나, `sudo`를 매번 사용하기 번거롭다면 `su`로 root 계정에 로그인해야 합니다. 아래 명령어로 루트 계정의 비밀번호를 설정할 수 있습니다.
+```bash
+$ su -i
+$ passwd
+> password: 
+```
+
+### Wayland (22.04)
+> 🔗 [Screen Share Not Working](https://askubuntu.com/questions/1407494/screen-share-not-working-in-ubuntu-22-04-in-all-platforms-zoom-teams-google-m)
+
+우분투 22.04는 화면 디스플레이 프로토콜로 Wayland를 사용하지만, 이는 전체 화면 공유가 불가능한 이슈가 있습니다. 이전 프로토콜인 Xorg로 디스플레이 설정을 바꿔주어야 Google Meet, Discord 등에서 화면 공유가 가능합니다.
+```bash
+# 현재 디스플레이 설정 확인 (Wayland)
+$ echo $XDG_SESSION_TYPE
+
+# 디스플레이 설정을 Xorg로 변경
+$ sudo vi /etc/gdm3/custom.conf
+WaylandEnable=false # 주석 해제
+
+# 재부팅 및 변경 확인 (x11)
+$ echo $XDG_SESSION_TYPE
+```
 
 ### Zsh
 &nbsp;zsh은 리눅스 기본 bash 보다 다양한 확장 기능을 제공하는 터미널 쉘입니다. 터미널 테마와 자동완성, 텍스트 하이라이트 등 유용한 플러그인 덕분에 개발에 필수적이라 할 수 있습니다. Zsh은 Mac OS의 기본 터미널 쉘이기도 합니다.  
