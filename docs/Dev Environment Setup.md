@@ -17,6 +17,7 @@
   - [Git](#git)
   - [Docker](#docker)
 - [Program](#program)
+  - [KakaoTalk](#kakaotalk)
   - [VS Code](#vscode)
   - [pinta (그림판)](#pinta-그림판)
   - [obs-studio (화면 녹화)](#obs-studio-화면-녹화)
@@ -189,6 +190,36 @@ Host *github*
 흔히 말하는 컨테이너 플랫폼인 Docker는 **Docker Engine**을 뜻합니다. Docker는 가상화를 위해 Linux의 내장 Virtual Machine 기능을 요구하며, **Docker Desktop**은 Linux가 아닌 다른 운영체제(Windows, Mac)에서 이를 지원하기 위한 GUI 도구입니다. 따라서 리눅스는 Docker Engine을 설치하고, 다른 운영체제는 Docker Desktop을 설치해야 합니다. 위에서 apt repository 등록 및 Docker Engine 설치 절차를 따르시기 바랍니다.
 
 ## Program
+### KakaoTalk
+카카오톡은 리눅스를 공식적으로 지원하지 않으므로 우툰부에서 윈도우 환경을 에뮬레이션하는 `wine`을 이용해야 합니다.
+1. wine 설치 ([공식 홈페이지](https://wiki.winehq.org/Ubuntu))
+```shell
+# 32bit 아키텍처 활성화
+sudo dpkg --add-architecture i386
+# wine 리포지토리 추가
+sudo mkdir -pm755 /etc/apt/keyrings
+sudo wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/winehq.key 
+sudo apt update
+# wine 설치
+sudo apt install --install-recommends winehq-stable
+```
+2. Windows용 카카오톡 설치 프로그램 [다운로드](https://www.kakaocorp.com/page/service/service/KakaoTalk)
+3. `wine`을 통한 카카오톡 설치
+   - 설치 시 폴더를 `/home/tools/` 등 확인하기 편한 곳으로 지정
+   - 기본 폴더 지정 시 `~/.wine/drive_c`에서 확인 가능
+   - 터미널에서 카카오톡을 실행하려면 `wine <설치한 폴더>/Kakaotalk.exe`
+```shell
+cd ~/Downloads
+LANG="ko_KR.UTF-8" wine KakaoTalk_Setup.exe
+```
+4. 한글폰트(나눔고딕) 설치 및 설정  
+   - [gulim.ttc](../tools/gulim.ttc) 파일을 다운받아 `~/.wine/drive_c/Windows/Fonts`에 옮긴 후
+   - `vi ~/.wine/system.reg`의 `MS Shell Dlg` 항목을 `"Gulim"`으로 설정 (스크린샷 참고)
+<p align="center">
+	<img src="../images/dev-setting-kakaotalk-favorite.jpg" width="200"/>
+  <img src="../images/dev-setting-winecfg-gulim-font.jpg" width="200"/>
+</p>
+
 ### VSCode
 **(설치방법)**
 먼저 [VS Code](https://code.visualstudio.com/download)에서 .deb 파일을 다운로드한 후 다음 명령어를 실행합니다. 
