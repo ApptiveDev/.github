@@ -115,6 +115,8 @@ $ vi ~/.zshrc
 plugins=( 
     # other plugins...
     git
+    docker
+    docker-compose
     zsh-autosuggestions
     zsh-syntax-highlighting
 )
