@@ -94,7 +94,7 @@ $ chsh -s $(which zsh)
 **설치방법**: 🔗 [Oh My Zsh Installation](https://github.com/ohmyzsh/ohmyzsh/tree/master#basic-installation)
 ```bash
 // OMZ 설치용 쉘 스크립트 다운로드 및 실행
-wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 sh install.sh
 ```
 
@@ -134,6 +134,7 @@ $ source ~/.zshrc
 Terminator는 한 터미널 창에서 여러 터미널을 분할해 사용할 수 있도록 하는 프로그램입니다. 더 확장된 프로그램으로 `tmux`를 사용할 수 있습니다.
 ```bash
 # Terminator 설치 및 기본 터미널로 설정 (Ctrl + Alt + T)
+$ sudo apt update
 $ sudo apt install terminator
 $ sudo update-alternatives --config x-terminal-emulator
 ```
