@@ -191,6 +191,32 @@ Host *github*
 ### Docker
 🔗 [Official Installation](https://docs.docker.com/engine/install/ubuntu/)  
 흔히 말하는 컨테이너 플랫폼인 Docker는 **Docker Engine**을 뜻합니다. Docker는 가상화를 위해 Linux의 내장 Virtual Machine 기능을 요구하며, **Docker Desktop**은 Linux가 아닌 다른 운영체제(Windows, Mac)에서 이를 지원하기 위한 GUI 도구입니다. 따라서 리눅스는 Docker Engine을 설치하고, 다른 운영체제는 Docker Desktop을 설치해야 합니다. 위에서 apt repository 등록 및 Docker Engine 설치 절차를 따르시기 바랍니다.
+```sh
+# 도커 다운로드를 위한 GPG 키 등록
+sudo apt-get update
+sudo apt-get install ca-certificates curl
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+
+# 도커 다운로드 리포지토리 (apt) 등록
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+  $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update
+
+# 도커 설치
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+# 도커 실행에 관리자 권한 획득
+sudo groupadd docker
+sudo usermod -aG docker $USER
+newgrp docker
+
+# 도커 정상 설치 확인
+docker run hello-world
+```
 
 ## Program
 ### KakaoTalk
