@@ -13,10 +13,8 @@
 ## Repository Naming
 ![Repository Naming](https://i.imgur.com/7XCN1Vc.png)  
  동아리 리포지토리는 프로젝트명 및 `apptive`, 기수, 포지션을 드러내야 합니다.
- - **리포지토리명**: `프로젝트명-포지션`
+ - **리포지토리명**: `프로젝트명`
     - `프로젝트명`의 대소문자 구분은 자유
-    - `포지션`은 소문자로만 구성 (backend/frontend/android)
-    - ex) PNU-backend, PNU-android, PNU-frontend 
  - **태그**: `apptive`와 기수
 
 ## Branch Protection
